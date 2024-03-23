@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Georgia', serif;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+}
+
+.book {
+    width: 60%;
+    max-width: 400px;
+    height: 60vh;
+    background: #8b4b82; /* Deep purple background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px; /* Slightly rounded corners for the book cover */
+}
+
+.cover-content {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    height: 60vh; /* Adjust based on your design */
+    position: relative;
+    top: -20%; /* Move the entire content up */
+}
+
+.cover-content {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    height: 60vh; /* Adjust based on your design */
+    position: relative;
+    top: -20%; /* Move the entire content up */
+}
+
+.cover-content .author {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1em; /* Adjust as necessary */
+}
+
+@media (max-width: 600px) {
+    .cover-content {
+        top: -10%; /* Less adjustment on smaller screens */
+    }
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+button {
+    animation: pulse 2s infinite;
+    font-family: 'Tangerine', cursive;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #e3f084; /* Soft purple */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded edges for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    transform: scale(1); /* Default scale */
+    position: absolute;
+    bottom: 0;
+    right: 20px; /* Move the button 20 pixels to the right */
+    
+}
+
+
+button:hover, button:focus {
+    background-color: #9b6bdb; /* A slightly deeper purple on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slightly enlarge on hover for emphasis */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
