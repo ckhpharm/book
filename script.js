@@ -71,3 +71,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Hardcoded credentials (for demonstration only)
+    const correctUsername = '0505';
+    const correctPassword = '0606';
+
+    if (username === correctUsername && password === correctPassword) {
+        document.getElementById('loginMessage').innerText = 'Login successful!';
+        // Here, you could redirect the user or show a different part of the application
+        window.location.href = 'cover.html';
+    } else {
+        document.getElementById('loginMessage').innerText = 'Invalid credentials!';
+    }
+});

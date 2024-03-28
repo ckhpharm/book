@@ -36,20 +36,11 @@ body, html {
     top: -20%; /* Move the entire content up */
 }
 
-.cover-content {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center the content */
-    height: 60vh; /* Adjust based on your design */
-    position: relative;
-    top: -20%; /* Move the entire content up */
-}
+
 
 .cover-content .author {
     font-size: 1.2em;
-    color: #666;
+    color: #51c551d9;
     margin-bottom: 1em; /* Adjust as necessary */
 }
 
